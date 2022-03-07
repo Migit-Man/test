@@ -1,0 +1,88 @@
+/* GLOBAL */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+* {padding: 0; margin: 0; font-family: 'Montserrat';}
+html {background-color: #EEEEEE;}
+a, a:visited{text-decoration: none; text-transform: none; color: inherit}
+a:hover {color: #696969;}
+li {list-style-type: none;}
+
+/* NAVIGATION */
+nav {
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 8px #BBBBBB;
+    padding: 15px 0;
+}
+
+nav img {
+    height: 30px;
+    margin-right: 24px;
+}
+nav .flex {
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+nav div.flex {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* ------------------------------------------------- */
+.wrapper {
+    width: 50%;
+    margin: auto;
+}
+
+section {
+    margin-top: 5%;
+}
+
+/* HEADINGS */
+.primary-heading {
+    font-weight: bold;
+    color: #239DD4;
+}
+
+.secondary-heading {
+    font-size: 24px;
+}
+
+.small-heading {
+    font-size: 16px;
+    font-weight: light;
+    color: #696969;
+    font-style: italic;
+}
+
+/* BUTTONS */
+a.primary-button, .primary-button {
+    color: #FFFFFF;
+    background-color: #239DD4;
+    padding: 6px 12px;
+    border-radius: 12px;
+    border: 2px solid #124F6A;
+    width: fit-content;
+}
+.primary-button:hover { background-color: #124F6A;}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+}
+
+.announcement {
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    padding: 24px 12px;
+    margin: 12px 0;
+    box-shadow: 0 0 8px #BBBBBB;
+}
+
+
+/* TESTING GROUNDS */
+

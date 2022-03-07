@@ -1,0 +1,16 @@
+{% load static %}
+<nav>
+    <div class="wrapper flex">
+        <div class="flex">
+            <img src="{% static 'announcements/logo.png' %}"/>
+            <h1 class="primary-heading">Community Announcements</h1>
+        </div>
+        <ul>
+            {% if not request.user.is_authenticated %}
+            <li>Login</li>
+            {% else %}
+            <li>Logout</li>
+            {% endif %}
+        </ul>
+    </div>
+</nav>

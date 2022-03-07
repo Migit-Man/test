@@ -1,0 +1,25 @@
+{% extends 'announcements/base.html' %}
+
+{% block content %}
+
+<div class="flex">
+
+    {% if request.user.is_authenticated %}
+        <a class ="primary-button" href="{% url 'announcements' %}">New Announcement</a>
+    {% endif %}
+
+    {% for a in announcements %}
+
+    <div class="announcement">
+        <h1 class="primary-heading">{{ a.title }}</h1>
+        <p class="small-heading">{{ a.category }}, {{a.date}}</p>
+        <section>
+            <p>{{a.description}}</p>
+        </section>
+    </div>
+
+    {% endfor %}
+
+</div>
+
+{% endblock content %}
